@@ -1,0 +1,614 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./Assets/wave-haikei.svg);
+}
+
+#root > .mynav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(55, 55, 55, 0.866) !important;
+}
+
+.navbar-brand img {
+  height: 2rem;
+  width: 10rem;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: black;
+}
+
+.navbar-nav li {
+  padding: 0 10px;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: black;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(1, 134, 1) !important;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/*...............................navbar complete.................*/
+.heading1 {
+  color: #333;
+  font-size: 70px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.paragraph1 {
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.heading2 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.paragraph2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+/* .....................................slider heading................*/
+.featured-item {
+  padding-left: 5px;
+  padding-right: 60px;
+  margin-left: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  filter: saturate(5);
+}
+
+.featured-info > h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #ccc;
+}
+
+.featured-info > p {
+  color: #ccc;
+}
+
+/*..................*/
+.slide_img {
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+/*........................*/
+.card1:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+#card3 .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 4rem;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+
+/*...............................timer.................*/
+#promo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./Assets/R.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  /* font-family: sans-serif;
+  font-size: 38px; */
+  cursor: pointer;
+}
+
+.timerbody {
+  background-image: url(./Assets/wave-haikei.svg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 25vh;
+  font-size: 10px;
+  color: #fff;
+}
+
+.cd_timer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.cd_container .time {
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  border: 4px solid #eee;
+  border-radius: 1rem;
+  margin: 0 1rem;
+}
+
+.cd_container span {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ccc;
+}
+
+/*.....................foter..............*/
+#futter {
+  background-image: url(../Components/Assets/images/blob-scene-haikei\ \(1\).svg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5rem;
+}
+
+#futter .row {
+  color: black;
+}
+
+#futter .row a {
+  color: black;
+  text-decoration: none;
+}
+
+#futter .row a:hover {
+  color: #78b616;
+  transition: 0.5s;
+  font-size: 16px;
+}
+
+.copyright::before {
+  content: "";
+  height: 5px;
+  width: 20rem;
+  background-color: #78b616;
+  border-radius: 25px;
+  display: block;
+  margin: auto;
+}
+
+.copyright p {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/*.............*/
+/**************ojudi.......*/
+.img-wrapper {
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  max-width: 100%;
+  transform: scale(1);
+  transform-origin: center;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.img-wrapper img:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+/*....................... grid carosuel..............*/
+/*....................timer slider ............*/
+#slidercardtime .card {
+  border: 1px solid #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 390px;
+  background-color: #eee;
+  cursor: pointer;
+  width: auto;
+}
+
+#slidercardtime .card-top img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: -3rem;
+}
+
+#slidercardtime h1 {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: -2rem;
+}
+
+#slidercardtime h3 {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: -0.5rem;
+}
+
+/*.................*/
+.price_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price_container > h2 {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: red;
+}
+
+.card-bottom button {
+  background-color: #78bc16;
+  margin-top: -0.3rem;
+  padding: 14px 21px 10px;
+  text-transform: uppercase;
+}
+
+.card-bottom button:hover {
+  background-color: black;
+  transition: 0.5s;
+  padding: 14px 21px 10px;
+  color: #fff;
+}
+
+/*..................about.............*/
+#about {
+  width: 100%;
+}
+
+#about .container {
+  width: 85%;
+  display: block;
+}
+
+.about-title {
+  width: 100%;
+  text-align: center;
+}
+
+.about-title h1 {
+  font-size: 35px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.about-title h1::after {
+  content: "";
+  height: 5px;
+  width: 150px;
+  background-color: #49c1a2;
+  border-radius: 25px;
+  display: block;
+  margin: auto;
+}
+
+.content-img img {
+  width: 80%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.content .article h3 {
+  color: black;
+  font-size: 17px;
+  padding-top: 40px;
+}
+
+.content .article p {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.content .article .button {
+  filter: saturate(2);
+}
+
+.content .article .button a {
+  text-decoration: none;
+  padding: 8px 25px;
+  background-color: #78bc16;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+
+.content .article .button a:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 1s ease;
+}
+
+/*...................contact form88888888888888888*******************/
+#form {
+  width: 100%;
+  color: black;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+
+.button3 {
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: #49c1a2;
+  color: black;
+  font-size: 18px;
+}
+
+.formp {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.formpa {
+  text-align: center;
+  color: black;
+  font-size: 15px;
+  margin-top: -50px;
+}
+
+.formpa a {
+  color: #49c1a2;
+}
+
+.contact-box {
+  width: 360px;
+  height: 500px;
+  margin: auto;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.contact-box h1 {
+  text-align: center;
+  padding-top: 15px;
+  color: #555;
+  font-weight: 800;
+}
+
+/*..............login...*/
+.login-box {
+  width: 360px;
+  height: 410px;
+  margin: auto;
+  margin-top: 5rem;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.login-box h1 {
+  text-align: center;
+  padding-top: 15px;
+  color: #555;
+  font-weight: 800;
+}
+
+/**********************signup*/
+.signup-box {
+  width: 360px;
+  height: 660px;
+  margin: 10px auto;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.signup-box h1 {
+  text-align: center;
+  padding-top: 15px;
+  color: #555;
+  font-weight: 800;
+}
+
+/*            .....................snap.....................*/
+.snap {
+  background-color: #999;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  padding-top: 15px;
+}
+
+/*..................................snap..........*/
+/*..............blog page.......*/
+#blog {
+  color: rgb(62, 51, 119);
+  font-size: 1rem;
+}
+#blog .title {
+  text-align: center;
+  display: block;
+  background-color: #2ed573;
+  font-size: 1.525rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  padding: 0.5rem 0.2rem;
+}
+#blog .left-product {
+  border: 2px solid #1a1720;
+  margin: 1rem 0;
+}
+#blog .left-product .first-prodcut-wrap {
+  background-color: #ecf0f1;
+}
+#blog .left-product .first-prodcut-wrap .img-wrapper {
+  height: auto;
+  width: 100%;
+}
+#blog .left-product .first-prodcut-wrap .img-wrapper img {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+#blog .left-product .first-prodcut-wrap .product-wrap {
+  padding: 1rem 0;
+}
+#blog .left-product .first-prodcut-wrap .product-wrap .img-wrapper {
+  padding: 0 !important;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+#blog .left-product .first-prodcut-wrap .product-wrap .img-wrapper img {
+  padding-left: 0.5rem;
+}
+#blog .left-product .first-prodcut-wrap .product-wrap .product-text h5 {
+  font-size: 1rem;
+  font-weight: 550;
+}
+#blog .left-product .first-prodcut-wrap .product-wrap .product-text p {
+  margin: 0;
+  padding: 0.1rem;
+}
+#blog .left-product .first-prodcut-wrap .product-wrap .product-text .checked {
+  color: orange;
+}
+
+.secondside p .linkgo {
+  display: inline-block;
+  border-bottom: 4px solid #2ed573;
+  text-decoration: none;
+  color: #3e3377;
+}
+
+.blogmain .container {
+  width: 90%;
+  margin: auto;
+}
+
+.description .about-image {
+  color: #1a1720;
+  letter-spacing: 2px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+.description .sample-ul h4 {
+  font-size: 1.525rem;
+  font-weight: 600;
+}
+.description .sample-ul .list-item {
+  color: #1a1720;
+  letter-spacing: 1px;
+}
+.description .sample-ul .list-item-ol {
+  color: #1a1720;
+  letter-spacing: 1px;
+}
+.description .sample-text h4 {
+  font-weight: 600;
+  font-size: 1.525rem;
+  text-align: justify;
+}
+.description .sample-text p {
+  border-left: 3px solid #2ed573;
+  color: #1a1720;
+  letter-spacing: 1px;
+  padding: 0 0.525rem;
+}
+.description .icons {
+  font-size: 1.725rem;
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+#readmore {
+  margin-top: 5rem;
+}
+
+.cardtitle_read img {
+  align-items: center;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+.cardtitle_read h1 {
+  text-align: center;
+  color: #3e3377;
+  text-transform: uppercase;
+}
+.cardtitle_read .cardbody p {
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.525rem;
+  text-align: justify;
+  color: #3e3377;
+}/*# sourceMappingURL=blog.css.map */
